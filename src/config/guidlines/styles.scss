@@ -1,0 +1,36 @@
+@import "./colors";
+@import "./fonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  padding: 0px;
+  font-family: "Poppins", helvetica;
+
+  hr {
+    width: 20%;
+    margin: 2% auto 1% auto;
+    text-align: center;
+    border: 0.5px solid #161616 !important;
+    color: #161616 !important;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    margin-top: 110px;
+  }
+}
+
+#root {
+  height: 100%;
+}

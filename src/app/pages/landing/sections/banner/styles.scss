@@ -1,0 +1,27 @@
+.container-banner {
+  height: 100vh;
+  background-image: url(../../../../assets/banner/prewedding-1.jpeg/);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -500px;
+  overflow: hidden;
+
+  .hero-body {
+    display: flex;
+    align-items: flex-end;
+
+    .container {
+      margin-bottom: 10%;
+
+      .title {
+        font-weight: 700;
+        font-size: 40px;
+        color: var(--color-pure-white);
+      }
+
+      .subtitle {
+        color: var(--color-pure-white);
+      }
+    }
+  }
+}
