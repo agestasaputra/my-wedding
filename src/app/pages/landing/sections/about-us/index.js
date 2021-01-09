@@ -22,7 +22,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
                     Agesta Budy Saputra
                 </h1>
                 <p className="card-person__desc">
-                    Putra dari Bpk. Budi Widodo & Ny. Yuli Sulistyaningsih
+                    Putra dari Bpk. Budi Widodo & Ibu. Yuli Sulistyaningsih
                 </p>
             </div>
             <div className="card-person mt-6">
@@ -33,7 +33,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
                     Siska Dwi Putri Yuliansyah
                 </h1>
                 <p className="card-person__desc">
-                    Putri dari Bpk. Fimansyah & Ny. Ratu Yuliastinah
+                    Putri dari Bpk. Fimansyah & Ibu. Ratu Yuliastinah
                 </p>
             </div>
         </div>
