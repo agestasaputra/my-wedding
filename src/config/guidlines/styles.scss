@@ -23,13 +23,17 @@ body {
     border: 0.5px solid #161616 !important;
     color: #161616 !important;
   }
-}
 
-@media screen and (max-width: 1366px) {
-  body {
-    margin-top: 110px;
+  .d-flex {
+    display: flex;
   }
 }
+
+// @media screen and (max-width: 1366px) {
+//   body {
+//     margin-top: 110px;
+//   }
+// }
 
 #root {
   height: 100%;

@@ -1,0 +1,28 @@
+.container-location {
+  max-width: unset;
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-location {
+    text-align: center;
+
+    .card-location__header {
+    }
+
+    .card-location__body {
+      .card-location__body--title {
+        color: var(--color-cool-black);
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .card-location__body--desc {
+        color: var(--color-cool-black);
+        font-size: 12px;
+      }
+    }
+  }
+}

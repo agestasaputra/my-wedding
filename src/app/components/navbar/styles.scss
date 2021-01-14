@@ -1,8 +1,29 @@
-.navbar {
+.navbar-desktop {
   padding: 0px 10%;
   box-shadow: 0 0 5px 0 var(--color-shadow);
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
-.btn-custom {
-  background: var(--color-primary);
+.navbar-mobile {
+  display: none;
+
+  @media (max-width: 480px) {
+    display: block;
+    padding: 8px 0px !important;
+    box-shadow: 0 0 5px 0 #303337;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .menu {
+      .menu__title {
+        color: var(--color-pure-white);
+        font-size: 11px;
+        font-weight: 300;
+      }
+    }
+  }
 }

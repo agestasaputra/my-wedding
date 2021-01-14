@@ -1,13 +1,14 @@
 import React from "react";
-import { Container } from "./styles";
 import Banner from "./sections/banner";
 import AboutUs from "./sections/about-us";
-import Catalog from "./sections/catalog";
-import Tagline from "./sections/tagline";
+import Location from "./sections/location";
+import "./styles.scss";
+// import Catalog from "./sections/catalog";
+// import Tagline from "./sections/tagline";
 
 const Landing = ({ state, dispatch, location }) => {
   return (
-    <Container>
+    <div class="container-landing">
       <Banner
         img={
           state.dataLandingPage.dataBanner && state.dataLandingPage.dataBanner
@@ -17,9 +18,10 @@ const Landing = ({ state, dispatch, location }) => {
         dataNewArrival={state.dataLandingPage.dataNewArrival}
         location={location}
       />
-      <Tagline img={state.dataLandingPage.dataTagline} />
-      <Catalog dataCatalog={state.dataLandingPage.dataCatalog} />
-    </Container>
+      <Location />
+      {/* <Tagline img={state.dataLandingPage.dataTagline} />
+      <Catalog dataCatalog={state.dataLandingPage.dataCatalog} /> */}
+    </div>
   );
 };
 
