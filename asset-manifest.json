@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/my-wedding/static/css/main.99d034b2.chunk.css",
-    "main.js": "/my-wedding/static/js/main.bb127046.chunk.js",
-    "main.js.map": "/my-wedding/static/js/main.bb127046.chunk.js.map",
+    "main.css": "/my-wedding/static/css/main.19b5850f.chunk.css",
+    "main.js": "/my-wedding/static/js/main.423c1a41.chunk.js",
+    "main.js.map": "/my-wedding/static/js/main.423c1a41.chunk.js.map",
     "runtime-main.js": "/my-wedding/static/js/runtime-main.c5386f63.js",
     "runtime-main.js.map": "/my-wedding/static/js/runtime-main.c5386f63.js.map",
-    "static/css/2.f271c652.chunk.css": "/my-wedding/static/css/2.f271c652.chunk.css",
-    "static/js/2.f3339f5f.chunk.js": "/my-wedding/static/js/2.f3339f5f.chunk.js",
-    "static/js/2.f3339f5f.chunk.js.map": "/my-wedding/static/js/2.f3339f5f.chunk.js.map",
+    "static/css/2.cdb1f516.chunk.css": "/my-wedding/static/css/2.cdb1f516.chunk.css",
+    "static/js/2.95ff90ea.chunk.js": "/my-wedding/static/js/2.95ff90ea.chunk.js",
+    "static/js/2.95ff90ea.chunk.js.map": "/my-wedding/static/js/2.95ff90ea.chunk.js.map",
     "index.html": "/my-wedding/index.html",
-    "static/css/2.f271c652.chunk.css.map": "/my-wedding/static/css/2.f271c652.chunk.css.map",
-    "static/css/main.99d034b2.chunk.css.map": "/my-wedding/static/css/main.99d034b2.chunk.css.map",
-    "static/js/2.f3339f5f.chunk.js.LICENSE.txt": "/my-wedding/static/js/2.f3339f5f.chunk.js.LICENSE.txt",
+    "static/css/2.cdb1f516.chunk.css.map": "/my-wedding/static/css/2.cdb1f516.chunk.css.map",
+    "static/css/main.19b5850f.chunk.css.map": "/my-wedding/static/css/main.19b5850f.chunk.css.map",
+    "static/js/2.95ff90ea.chunk.js.LICENSE.txt": "/my-wedding/static/js/2.95ff90ea.chunk.js.LICENSE.txt",
     "static/media/denim.0cecac61.jpg": "/my-wedding/static/media/denim.0cecac61.jpg",
+    "static/media/font-awesome.min.css": "/my-wedding/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/landing-banner.5a6c98ab.jpg": "/my-wedding/static/media/landing-banner.5a6c98ab.jpg",
     "static/media/lekbong.ac0cb681.jpg": "/my-wedding/static/media/lekbong.ac0cb681.jpg",
     "static/media/styles.scss": "/my-wedding/static/media/prewedding-1.7cb28dd9.jpeg",
@@ -22,9 +23,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c5386f63.js",
-    "static/css/2.f271c652.chunk.css",
-    "static/js/2.f3339f5f.chunk.js",
-    "static/css/main.99d034b2.chunk.css",
-    "static/js/main.bb127046.chunk.js"
+    "static/css/2.cdb1f516.chunk.css",
+    "static/js/2.95ff90ea.chunk.js",
+    "static/css/main.19b5850f.chunk.css",
+    "static/js/main.423c1a41.chunk.js"
   ]
 }
