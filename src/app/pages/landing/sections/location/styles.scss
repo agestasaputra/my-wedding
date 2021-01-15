@@ -120,12 +120,15 @@
   }
 
   .container-map {
-    margin: 100px 15px 15px 15px;
+    margin: 100px auto 50px;
+    width: 95%;
+    max-width: 1800px;
     height: 450px;
     background: beige;
 
     @media (max-width: 480px) {
-      height: 400px;
+      width: 90%;
+      height: 350px;
     }
   }
 }
