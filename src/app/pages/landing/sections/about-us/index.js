@@ -12,7 +12,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
     slidesToScroll: 1,
   };
   return (
-    <section className="container-about-us py-6">
+    <section className="container-about-us">
       <div className="columns m-0">
         <div className="column">
           <h1 className="container-about-us__title">ABOUT US</h1>
@@ -41,7 +41,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
       </div>
       <div className="columns-mobile">
         <Slider {...settings}>
-          <div className="card-person mt-6">
+          <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
                 src={PreweddingImg}
@@ -54,7 +54,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
               Daughter of Mr. Fimansyah & Mrs. Ratih Yuliastinah
             </p>
           </div>
-          <div className="card-person mt-6">
+          <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
                 src={PreweddingImg}

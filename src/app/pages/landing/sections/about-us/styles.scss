@@ -1,6 +1,11 @@
 .container-about-us {
   max-width: unset;
 
+  @media (max-width: 480px) {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
   .container-about-us__title {
     width: 100%;
     text-align: center;
@@ -8,6 +13,11 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.125;
+
+    @media (max-width: 480px) {
+      color: #363636;
+      font-size: 20px;
+    }
   }
 
   .columns-desktop {
