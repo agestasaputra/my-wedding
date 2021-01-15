@@ -5,15 +5,10 @@ const Navbar = ({ state, dispatch }) => {
   return (
     <React.Fragment>
       {/* Navbar Desktop */}
-      <nav className="navbar navbar-desktop is-transparent is-fixed-top">
+      <nav className="navbar navbar-desktop is-transparent is-fixed-top is-black">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              alt="Bulma: a modern CSS framework based on Flexbox"
-              width="112"
-              height="28"
-            />
+          <a className="navbar-item" href="/">
+            Siska & Agesta's Wedding
           </a>
           <div className="navbar-burger" data-target="navbarMenu">
             <span></span>

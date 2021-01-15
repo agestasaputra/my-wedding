@@ -15,14 +15,18 @@ body {
   height: 100vh;
   padding: 0px;
   font-family: "Poppins", helvetica;
-  overflow-x: hidden;
-  margin-bottom: 62px;
+  margin-top: 51.9px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 62px;
+    overflow-x: hidden;
+  }
 
   hr {
     width: 20%;
-    margin: 2% auto 1% auto;
+    margin: 1% auto 1% auto;
     text-align: center;
-    border: 1px solid #161616 !important;
+    border: 1px solid var(--color-dope-black) !important;
   }
 
   .d-flex {

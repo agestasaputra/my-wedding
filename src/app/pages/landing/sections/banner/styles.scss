@@ -3,8 +3,12 @@
   background-image: url(../../../../assets/banner/prewedding-1.jpeg/);
   background-attachment: fixed;
   background-size: cover;
-  background-position: 0 -600px;
+  background-position: 0 600px;
   overflow: hidden;
+
+  @media (max-width: 1480px) {
+    background-position: 0 -480px;
+  }
 
   @media (max-width: 480px) {
     background-attachment: unset;
@@ -29,19 +33,19 @@
       .title {
         font-weight: 700;
         font-size: 40px;
-        color: var(--color-pure-white);
+        color: var(--color-perfect-wood);
 
         @media (max-width: 480px) {
           font-weight: bold;
           font-size: 20px;
-          color: var(--color-pure-white);
+          color: var(--color-perfect-wood);
           margin-bottom: 2px !important;
         }
       }
 
       .subtitle {
         font-size: 10px;
-        color: var(--color-pure-white);
+        color: var(--color-perfect-wood);
       }
     }
   }

@@ -19,9 +19,9 @@ const AboutUs = ({ dataNewArrival, location }) => {
           <hr />
         </div>
       </div>
-      <div className="columns columns-desktop m-0 is-justify-content-space-around mt-6 mt-6">
+      <div className="columns columns-desktop m-0 is-justify-content-space-around mt-4">
         <div className="card-person mt-6">
-          <div className="card-person__frame mb-4">
+          <div className="card-person__frame mb-5">
             <img src={PreweddingImg} className="card-person__img" alt="name" />
           </div>
           <h1 className="card-person__title">Siska Dwi Putri Yuliansyah</h1>
@@ -30,7 +30,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
           </p>
         </div>
         <div className="card-person mt-6">
-          <div className="card-person__frame mb-4">
+          <div className="card-person__frame mb-5">
             <img src={PreweddingImg} className="card-person__img" alt="name" />
           </div>
           <h1 className="card-person__title">Agesta Budy Saputra</h1>

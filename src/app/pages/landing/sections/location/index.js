@@ -21,7 +21,7 @@ const Location = ({ dataNewArrival, location }) => {
       <div className="columns columns-desktop m-0 is-justify-content-space-around mt-6 mt-6">
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
-            <div className="card-location__header">
+            <div className="card-location__header mb-20">
               <i className="fa fa-home fa-5x" />
             </div>
             <div className="card-location__body">
@@ -40,7 +40,7 @@ const Location = ({ dataNewArrival, location }) => {
         </div>
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
-            <div className="card-location__header">
+            <div className="card-location__header mb-20">
               <i className="fa fa-calendar-check-o fa-5x" />
             </div>
             <div className="card-location__body">
@@ -53,7 +53,7 @@ const Location = ({ dataNewArrival, location }) => {
         </div>
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
-            <div className="card-location__header">
+            <div className="card-location__header mb-20">
               <i className="fa fa-clock-o fa-5x" />
             </div>
             <div className="card-location__body">
