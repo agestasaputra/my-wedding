@@ -8,7 +8,7 @@ import "./styles.scss";
 
 const Landing = ({ state, dispatch, location }) => {
   return (
-    <div class="container-landing">
+    <div className="container-landing">
       <Banner
         img={
           state.dataLandingPage.dataBanner && state.dataLandingPage.dataBanner

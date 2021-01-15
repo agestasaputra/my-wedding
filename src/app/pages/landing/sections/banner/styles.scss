@@ -33,19 +33,22 @@
       .title {
         font-weight: 700;
         font-size: 40px;
-        color: var(--color-perfect-wood);
+        color: var(--color-perfect-woodlight);
 
         @media (max-width: 480px) {
           font-weight: bold;
           font-size: 20px;
-          color: var(--color-perfect-wood);
           margin-bottom: 2px !important;
         }
       }
 
       .subtitle {
-        font-size: 10px;
-        color: var(--color-perfect-wood);
+        font-size: 20px;
+        color: var(--color-perfect-woodlight);
+
+        @media (max-width: 480px) {
+          font-size: 10px;
+        }
       }
     }
   }

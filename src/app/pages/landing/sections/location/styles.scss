@@ -84,7 +84,7 @@
           button {
             &::before {
               font-size: 11px;
-              color: var(--color-pure-white);
+              color: var(--color-perfect-wood);
             }
           }
         }
@@ -100,22 +100,32 @@
         }
 
         .fa {
-          color: var(--color-pure-white);
+          color: var(--color-perfect-wood);
         }
       }
 
       .card-location__body {
         .card-location__body--title {
-          color: var(--color-pure-white);
+          color: var(--color-perfect-wood);
           font-size: 20px;
           font-weight: bold;
         }
 
         .card-location__body--desc {
-          color: var(--color-pure-white);
+          color: var(--color-perfect-wood);
           font-size: 12px;
         }
       }
+    }
+  }
+
+  .container-map {
+    margin: 100px 15px 15px 15px;
+    height: 450px;
+    background: beige;
+
+    @media (max-width: 480px) {
+      height: 400px;
     }
   }
 }

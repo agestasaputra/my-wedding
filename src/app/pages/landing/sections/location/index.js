@@ -1,8 +1,28 @@
 import React from "react";
 import "./styles.scss";
 import Slider from "react-slick";
+import "ol/ol.css";
+import { Map, View } from "ol";
+import VectorSource from "ol/source/Vector";
+import {
+  Tile as TileLayer,
+  Vector as VectorLayer,
+  Group as GroupLayer,
+} from "ol/layer";
+import OSM from "ol/source/OSM";
+import XYZ from "ol/source/XYZ";
+import Feature from "ol/Feature";
+import { fromLonLat } from "ol/proj";
+import Point from "ol/geom/Point";
+import { Icon, Style } from "ol/style";
+import Marker from "app/assets/location/marker.png";
 
 const Location = ({ dataNewArrival, location }) => {
+  const [dataMap, setDataMap] = React.useState({
+    coordinat: [11892691.181819074, -701883.51454213],
+    zoom: 18,
+  });
+
   const settings = {
     dots: true,
     infinite: true,
@@ -10,12 +30,87 @@ const Location = ({ dataNewArrival, location }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  React.useEffect(() => {
+    const map = new Map({
+      view: new View({
+        center: dataMap.coordinat,
+        zoom: dataMap.zoom,
+      }),
+      target: "map",
+    });
+
+    const openStreetMapStandard = new TileLayer({
+      source: new OSM(),
+      visible: true,
+      title: "OSMStandard",
+    });
+
+    const openStreetMapHumanitarian = new TileLayer({
+      source: new OSM({
+        url: "https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+      }),
+      visible: false,
+      title: "OSMHumanitarian",
+    });
+
+    const stamenTerrain = new TileLayer({
+      source: new XYZ({
+        url: "http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg",
+        attributions:
+          'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+      }),
+      visible: false,
+      title: "StamenTerrain",
+    });
+
+    const markerStyle = new Feature({
+      geometry: new Point([11892689.973203452, -701863.1325568107]),
+    });
+
+    markerStyle.setStyle(
+      new Style({
+        image: new Icon({
+          // color: "red",
+          // crossOrigin: "anonymous",
+          // For Internet Explorer 11
+          // imgSize: [20, 20],
+          scale: 0.07,
+          src: Marker,
+        }),
+      })
+    );
+
+    const marker = new VectorSource({
+      features: [markerStyle],
+    });
+
+    const markerLayer = new VectorLayer({
+      source: marker,
+    });
+
+    // Layer Group
+    const baseLayerGroup = new GroupLayer({
+      layers: [
+        openStreetMapStandard,
+        openStreetMapHumanitarian,
+        stamenTerrain,
+        markerLayer,
+      ],
+    });
+    map.addLayer(baseLayerGroup);
+
+    map.on("click", (e) => {
+      console.log("cek e:", e);
+    });
+  }, []);
+
   return (
     <section className="container-location">
       <div className="columns m-0">
         <div className="column">
           <h1 className="container-location__title">LOCATION</h1>
-          <hr class="hr-custom" />
+          <hr className="hr-custom" />
         </div>
       </div>
       <div className="columns columns-desktop m-0 is-justify-content-space-around mt-6 mt-6">
@@ -128,6 +223,8 @@ const Location = ({ dataNewArrival, location }) => {
           </div>
         </Slider>
       </div>
+
+      <div className="container-map" id="map" />
     </section>
   );
 };
