@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import Navbar from "app/components/navbar";
-import Footer from "app/components/footer";
+// import Footer from "app/components/footer";
 import Landing from "app/pages/landing";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
@@ -25,12 +25,12 @@ const Routes = ({ state, dispatch }) => {
         /> */}
         <Route
           path="/"
-          component={props => (
+          component={(props) => (
             <Landing {...props} state={state} dispatch={dispatch} />
           )}
         />
+        {/* <Footer /> */}
       </Switch>
-      <Footer />
     </React.Suspense>
   );
 };

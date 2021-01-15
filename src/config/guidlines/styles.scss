@@ -15,25 +15,20 @@ body {
   height: 100vh;
   padding: 0px;
   font-family: "Poppins", helvetica;
+  overflow-x: hidden;
+  margin-bottom: 62px;
 
   hr {
     width: 20%;
     margin: 2% auto 1% auto;
     text-align: center;
-    border: 0.5px solid #161616 !important;
-    color: #161616 !important;
+    border: 1px solid #161616 !important;
   }
 
   .d-flex {
     display: flex;
   }
 }
-
-// @media screen and (max-width: 1366px) {
-//   body {
-//     margin-top: 110px;
-//   }
-// }
 
 #root {
   height: 100%;

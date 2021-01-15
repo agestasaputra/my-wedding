@@ -8,10 +8,10 @@
 }
 
 .navbar-mobile {
-  display: none;
+  display: none !important;
 
   @media (max-width: 480px) {
-    display: block;
+    display: flex !important;
     padding: 8px 0px !important;
     box-shadow: 0 0 5px 0 #303337;
     display: flex;
@@ -19,6 +19,9 @@
     text-align: center;
 
     .menu {
+      .fa {
+        font-size: 27px;
+      }
       .menu__title {
         color: var(--color-pure-white);
         font-size: 11px;

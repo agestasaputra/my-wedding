@@ -6,20 +6,41 @@
   background-position: 0 -600px;
   overflow: hidden;
 
+  @media (max-width: 480px) {
+    background-attachment: unset;
+    background-position: unset;
+  }
+
   .hero-body {
     display: flex;
     align-items: flex-end;
 
+    @media (max-width: 480px) {
+      padding: 10px;
+    }
+
     .container {
       margin-bottom: 10%;
+
+      @media (max-width: 480px) {
+        margin-bottom: 70%;
+      }
 
       .title {
         font-weight: 700;
         font-size: 40px;
         color: var(--color-pure-white);
+
+        @media (max-width: 480px) {
+          font-weight: bold;
+          font-size: 20px;
+          color: var(--color-pure-white);
+          margin-bottom: 2px !important;
+        }
       }
 
       .subtitle {
+        font-size: 10px;
         color: var(--color-pure-white);
       }
     }

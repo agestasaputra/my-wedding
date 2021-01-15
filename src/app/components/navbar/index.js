@@ -46,25 +46,25 @@ const Navbar = ({ state, dispatch }) => {
       {/* Navbar Mobile */}
       <nav className="navbar navbar-mobile is-fixed-bottom is-black">
         <div className="menu">
-          <i className="fa fa-home fa-2x" />
+          <i className="fa fa-home" />
           <h6 className="menu__title" href="https://bulma.io/">
             Home
           </h6>
         </div>
         <div className="menu">
-          <i className="fa fa-info-circle fa-2x" />
+          <i className="fa fa-info-circle" />
           <h6 className="menu__title" href="https://bulma.io/">
             Info
           </h6>
         </div>
         <div className="menu">
-          <i className="fa fa-photo fa-2x" />
+          <i className="fa fa-photo" />
           <h6 className="menu__title" href="https://bulma.io/">
             Gallery
           </h6>
         </div>
         <div className="menu">
-          <i className="fa fa-history fa-2x" />
+          <i className="fa fa-history" />
           <h6 className="menu__title" href="https://bulma.io/">
             Story
           </h6>
