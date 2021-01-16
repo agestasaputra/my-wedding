@@ -28,10 +28,15 @@ body {
     margin: 1% auto 1% auto;
     text-align: center;
     border: 1px solid var(--color-dope-black) !important;
+    background: var(--color-dope-black);
   }
 
   .d-flex {
     display: flex;
+  }
+
+  .d-none {
+    display: none;
   }
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
 import Banner from "./sections/banner";
+import Verses from "./sections/verses";
+import Counter from "./sections/counter";
 import AboutUs from "./sections/about-us";
 import Location from "./sections/location";
 import "./styles.scss";
@@ -13,6 +15,14 @@ const Landing = ({ state, dispatch, location }) => {
         img={
           state.dataLandingPage.dataBanner && state.dataLandingPage.dataBanner
         }
+      />
+      <Verses
+        dataNewArrival={state.dataLandingPage.dataNewArrival}
+        location={location}
+      />
+      <Counter
+        dataNewArrival={state.dataLandingPage.dataNewArrival}
+        location={location}
       />
       <AboutUs
         dataNewArrival={state.dataLandingPage.dataNewArrival}

@@ -1,0 +1,82 @@
+.hr-countdown {
+  overflow: visible;
+  padding: 0;
+  border: none !important;
+  border-top: medium double var(--color-pure-white) !important;
+  background: unset !important;
+  color: var(--color-pure-white);
+  text-align: center;
+  width: 38%;
+  max-width: 420px;
+  opacity: 0.4;
+
+  &.top {
+    margin-bottom: 25px;
+  }
+
+  &.bottom {
+    margin-top: 25px;
+  }
+
+  &::after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    font-size: 11px;
+    padding: 0 0.25em;
+    background: var(--color-dope-black);
+  }
+}
+
+.container-countdown {
+  width: 45%;
+  max-width: 500px;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--color-pure-white);
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid;
+  }
+
+  .seconds {
+    border-right: unset;
+  }
+
+  .days__counter,
+  .hours__counter,
+  .minutes__counter,
+  .seconds__counter {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: -5px;
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  .days__desc,
+  .hours__desc,
+  .minutes__desc,
+  .seconds__desc {
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    @media (max-width: 480px) {
+      font-size: 7px;
+    }
+  }
+}

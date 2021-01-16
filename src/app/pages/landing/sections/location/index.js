@@ -12,13 +12,12 @@ import {
 import OSM from "ol/source/OSM";
 import XYZ from "ol/source/XYZ";
 import Feature from "ol/Feature";
-import { fromLonLat } from "ol/proj";
 import Point from "ol/geom/Point";
 import { Icon, Style } from "ol/style";
 import Marker from "app/assets/location/marker.png";
 
 const Location = ({ dataNewArrival, location }) => {
-  const [dataMap, setDataMap] = React.useState({
+  const [dataMap] = React.useState({
     coordinat: [11892691.181819074, -701883.51454213],
     zoom: 18,
   });
@@ -103,7 +102,7 @@ const Location = ({ dataNewArrival, location }) => {
     map.on("click", (e) => {
       console.log("cek e:", e);
     });
-  }, []);
+  }, [dataMap]);
 
   return (
     <section className="container-location">
@@ -117,7 +116,7 @@ const Location = ({ dataNewArrival, location }) => {
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
             <div className="card-location__header mb-20">
-              <i className="fa fa-home fa-5x" />
+              <i className="fa fa-home fa-4x" />
             </div>
             <div className="card-location__body">
               <h1 className="card-location__body--title">VENUE</h1>
@@ -136,7 +135,7 @@ const Location = ({ dataNewArrival, location }) => {
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
             <div className="card-location__header mb-20">
-              <i className="fa fa-calendar-check-o fa-5x" />
+              <i className="fa fa-calendar-check-o fa-4x" />
             </div>
             <div className="card-location__body">
               <h1 className="card-location__body--title">DATE</h1>
@@ -149,7 +148,7 @@ const Location = ({ dataNewArrival, location }) => {
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
             <div className="card-location__header mb-20">
-              <i className="fa fa-clock-o fa-5x" />
+              <i className="fa fa-clock-o fa-4x" />
             </div>
             <div className="card-location__body">
               <h1 className="card-location__body--title">TIME</h1>

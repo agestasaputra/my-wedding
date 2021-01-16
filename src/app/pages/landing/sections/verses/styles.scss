@@ -1,0 +1,27 @@
+.container-verses {
+  max-width: unset;
+  padding: 70px 0px;
+
+  @media (max-width: 480px) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .columns-verses {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .columns-verses__title {
+      font-size: 25px;
+    }
+    .columns-verses__desc {
+      width: 60%;
+      font-size: 12px;
+      margin: 0px auto !important;
+
+      @media (max-width: 480px) {
+        font-size: 9px;
+      }
+    }
+  }
+}
