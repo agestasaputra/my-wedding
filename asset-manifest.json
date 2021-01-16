@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-wedding/static/css/main.fea11ebe.chunk.css",
-    "main.js": "/my-wedding/static/js/main.acc39754.chunk.js",
-    "main.js.map": "/my-wedding/static/js/main.acc39754.chunk.js.map",
+    "main.css": "/my-wedding/static/css/main.52e9f959.chunk.css",
+    "main.js": "/my-wedding/static/js/main.d7594fb0.chunk.js",
+    "main.js.map": "/my-wedding/static/js/main.d7594fb0.chunk.js.map",
     "runtime-main.js": "/my-wedding/static/js/runtime-main.c5386f63.js",
     "runtime-main.js.map": "/my-wedding/static/js/runtime-main.c5386f63.js.map",
     "static/css/2.292857d6.chunk.css": "/my-wedding/static/css/2.292857d6.chunk.css",
-    "static/js/2.7fc616b0.chunk.js": "/my-wedding/static/js/2.7fc616b0.chunk.js",
-    "static/js/2.7fc616b0.chunk.js.map": "/my-wedding/static/js/2.7fc616b0.chunk.js.map",
+    "static/js/2.a9fea93e.chunk.js": "/my-wedding/static/js/2.a9fea93e.chunk.js",
+    "static/js/2.a9fea93e.chunk.js.map": "/my-wedding/static/js/2.a9fea93e.chunk.js.map",
     "index.html": "/my-wedding/index.html",
     "static/css/2.292857d6.chunk.css.map": "/my-wedding/static/css/2.292857d6.chunk.css.map",
-    "static/css/main.fea11ebe.chunk.css.map": "/my-wedding/static/css/main.fea11ebe.chunk.css.map",
-    "static/js/2.7fc616b0.chunk.js.LICENSE.txt": "/my-wedding/static/js/2.7fc616b0.chunk.js.LICENSE.txt",
+    "static/css/main.52e9f959.chunk.css.map": "/my-wedding/static/css/main.52e9f959.chunk.css.map",
+    "static/js/2.a9fea93e.chunk.js.LICENSE.txt": "/my-wedding/static/js/2.a9fea93e.chunk.js.LICENSE.txt",
     "static/media/denim.0cecac61.jpg": "/my-wedding/static/media/denim.0cecac61.jpg",
     "static/media/font-awesome.min.css": "/my-wedding/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/landing-banner.5a6c98ab.jpg": "/my-wedding/static/media/landing-banner.5a6c98ab.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.c5386f63.js",
     "static/css/2.292857d6.chunk.css",
-    "static/js/2.7fc616b0.chunk.js",
-    "static/css/main.fea11ebe.chunk.css",
-    "static/js/main.acc39754.chunk.js"
+    "static/js/2.a9fea93e.chunk.js",
+    "static/css/main.52e9f959.chunk.css",
+    "static/js/main.d7594fb0.chunk.js"
   ]
 }
