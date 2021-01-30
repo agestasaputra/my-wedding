@@ -12,7 +12,9 @@
 }
 
 html {
-  overflow: hidden;
+  @media (max-width: 480px) {
+    overflow: hidden;
+  }
 }
 
 body {
@@ -23,7 +25,7 @@ body {
 
   @media (max-width: 480px) {
     margin-top: 0px;
-    margin-bottom: 55px;
+    margin-bottom: 59px;
     overflow-x: hidden;
   }
 
