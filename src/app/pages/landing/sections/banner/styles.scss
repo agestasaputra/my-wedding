@@ -25,29 +25,73 @@
 
     .container {
       margin-bottom: 10%;
+      height: 60%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
 
       @media (max-width: 480px) {
-        margin-bottom: 70%;
+        margin-bottom: 55px;
+        height: 60%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
       }
 
-      .title {
-        font-weight: 700;
-        font-size: 40px;
-        color: var(--color-perfect-woodlight);
-
-        @media (max-width: 480px) {
+      .section-invitation {
+        .title {
+          color: var(--color-perfect-woodlight);
           font-weight: bold;
-          font-size: 20px;
+          font-size: 28px;
+          font-family: "Dancing Script", handwriting;
           margin-bottom: 2px !important;
+
+          .guest {
+            text-transform: capitalize;
+          }
+
+          @media (max-width: 480px) {
+            font-weight: bold;
+            font-size: 17px;
+            font-family: "Dancing Script", handwriting;
+            margin-bottom: 2px !important;
+          }
+        }
+
+        .subtitle {
+          color: var(--color-perfect-woodlight);
+          font-size: 17px;
+          width: 18%;
+          font-family: "Dancing Script", handwriting;
+
+          @media (max-width: 480px) {
+            font-size: 10px;
+            width: 37%;
+            font-family: "Dancing Script", handwriting;
+          }
         }
       }
 
-      .subtitle {
-        font-size: 20px;
-        color: var(--color-perfect-woodlight);
+      .section-couple {
+        .title {
+          font-weight: 700;
+          font-size: 40px;
+          color: var(--color-perfect-woodlight);
 
-        @media (max-width: 480px) {
-          font-size: 10px;
+          @media (max-width: 480px) {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 2px !important;
+          }
+        }
+
+        .subtitle {
+          font-size: 20px;
+          color: var(--color-perfect-woodlight);
+
+          @media (max-width: 480px) {
+            font-size: 10px;
+          }
         }
       }
     }

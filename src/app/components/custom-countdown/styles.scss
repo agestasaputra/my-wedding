@@ -2,9 +2,9 @@
   overflow: visible;
   padding: 0;
   border: none !important;
-  border-top: medium double var(--color-pure-white) !important;
+  border-top: medium double var(--color-perfect-wood) !important;
   background: unset !important;
-  color: var(--color-pure-white);
+  color: var(--color-perfect-wood);
   text-align: center;
   width: 38%;
   max-width: 420px;
@@ -35,7 +35,7 @@
   margin: 0px auto;
   display: flex;
   flex-flow: row nowrap;
-  color: var(--color-pure-white);
+  color: var(--color-perfect-wood);
 
   @media (max-width: 480px) {
     width: 90%;

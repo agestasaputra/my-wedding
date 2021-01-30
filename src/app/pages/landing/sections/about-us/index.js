@@ -27,13 +27,29 @@ const AboutUs = ({ dataNewArrival, location }) => {
 
   return (
     <section className="container-about-us">
-      <div className="columns m-0">
+      <div className="columns columns-about-us-head m-0">
         <div className="column">
-          <h1 className="container-about-us__title">ABOUT US</h1>
+          <h1 className="columns-about-us-head__title">ABOUT US</h1>
           <hr />
         </div>
       </div>
-      <div className="columns columns-desktop m-0 is-justify-content-space-around mt-4">
+      <div className="columns container-about-us-verses">
+        <div className="column">
+          <h1 className="container-about-us-verses__title">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+          </h1>
+          <p className="container-about-us-verses__desc">
+            ❝ And of His signs is that He created for you from yourselves mates
+            that you may find tranquility in them; and He placed between you
+            affection and mercy. Indeed in that are signs for a people who give
+            thought. ❞
+            <br />
+            <br />
+            (Ar-Rum: 21)
+          </p>
+        </div>
+      </div>
+      <div className="columns container-about-us-body columns-desktop m-0 is-justify-content-space-around mt-4">
         <div className="card-person mt-6">
           <div className="card-person__frame mb-5">
             <img src={PreweddingImg} className="card-person__img" alt="name" />
@@ -53,7 +69,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
           </p>
         </div>
       </div>
-      <div className="columns-mobile">
+      <div className="columns container-about-us-body columns-mobile">
         <Slider {...settings}>
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">

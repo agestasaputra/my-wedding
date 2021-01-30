@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "./sections/banner";
-import Verses from "./sections/verses";
+import Invitation from "./sections/invitation";
 import Counter from "./sections/counter";
+// import Verses from "./sections/verses";
 import AboutUs from "./sections/about-us";
 import Location from "./sections/location";
 import "./styles.scss";
@@ -15,8 +16,9 @@ const Landing = ({ state, dispatch, location }) => {
         img={
           state.dataLandingPage.dataBanner && state.dataLandingPage.dataBanner
         }
+        location={location}
       />
-      <Verses
+      <Invitation
         dataNewArrival={state.dataLandingPage.dataNewArrival}
         location={location}
       />
@@ -24,6 +26,10 @@ const Landing = ({ state, dispatch, location }) => {
         dataNewArrival={state.dataLandingPage.dataNewArrival}
         location={location}
       />
+      {/* <Verses
+        dataNewArrival={state.dataLandingPage.dataNewArrival}
+        location={location}
+      /> */}
       <AboutUs
         dataNewArrival={state.dataLandingPage.dataNewArrival}
         location={location}

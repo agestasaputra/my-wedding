@@ -1,0 +1,48 @@
+.container-invitation {
+  max-width: unset;
+  padding: 50px 0px 150px 0px;
+
+  @media (max-width: 480px) {
+    padding: 50px 0px 100px 0px;
+  }
+
+  .columns-invitation-head {
+    text-align: center;
+    margin-bottom: 0px !important;
+
+    .columns-invitation-head__title {
+      width: 100%;
+      text-align: center;
+      color: var(--color-dope-black);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.125;
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .columns-invitation-body {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .columns-invitation-body__title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 10px !important;
+    }
+    .columns-invitation-body__desc {
+      width: 45%;
+      font-size: 12px;
+      margin: 0px auto !important;
+      text-align: center;
+
+      @media (max-width: 480px) {
+        width: 80%;
+        font-size: 9px;
+      }
+    }
+  }
+}

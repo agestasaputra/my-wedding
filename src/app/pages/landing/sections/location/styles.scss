@@ -1,12 +1,10 @@
 .container-location {
   max-width: unset;
   background-color: var(--color-dope-black);
-  padding-top: 3em;
-  padding-bottom: 6em;
+  padding: 50px 0px 150px 0px;
 
   @media (max-width: 480px) {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding: 50px 0px 150px 0px;
   }
 
   .container-location__title {

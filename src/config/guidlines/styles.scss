@@ -11,6 +11,10 @@
   outline: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   height: 100vh;
   padding: 0px;
@@ -19,7 +23,7 @@ body {
 
   @media (max-width: 480px) {
     margin-top: 0px;
-    margin-bottom: 62px;
+    margin-bottom: 55px;
     overflow-x: hidden;
   }
 
