@@ -99,20 +99,20 @@ const Location = ({ dataNewArrival, location }) => {
     });
     map.addLayer(baseLayerGroup);
 
-    map.on("click", (e) => {
-      console.log("cek e:", e);
-    });
+    // map.on("click", (e) => {
+    //   console.log("cek e:", e);
+    // });
   }, [dataMap]);
 
   return (
     <section className="container-location">
-      <div className="columns m-0">
+      <div className="columns container-location-head m-0">
         <div className="column">
           <h1 className="container-location__title">LOCATION</h1>
           <hr className="hr-custom" />
         </div>
       </div>
-      <div className="columns columns-desktop m-0 is-justify-content-space-around mt-6 mt-6">
+      <div className="columns container-location-body columns-desktop m-0 is-justify-content-space-around mt-6 mt-6">
         <div className="column d-flex is-justify-content-center">
           <div className="card-location">
             <div className="card-location__header mb-20">
@@ -121,13 +121,13 @@ const Location = ({ dataNewArrival, location }) => {
             <div className="card-location__body">
               <h1 className="card-location__body--title">VENUE</h1>
               <p className="card-location__body--desc">
-                Sudirman Grand Ballroom
+                Masjid Jami' Al-Falaah
               </p>
               <p className="card-location__body--desc">
-                Jl. Jend. Sudirman No.620, Dungus Cariang, Andir, Kota
+                Jl. Aup Bar RT 03/ RW 10 Pasar Minggu
               </p>
               <p className="card-location__body--desc">
-                Bandung, Jawa Barat 40183
+                Pasar Minggu, Jakarta Selatan, DKI Jakarta 12540
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ const Location = ({ dataNewArrival, location }) => {
             <div className="card-location__body">
               <h1 className="card-location__body--title">DATE</h1>
               <p className="card-location__body--desc">
-                Sunday, 8th August 2021
+                Sunday, 21 November 2021
               </p>
             </div>
           </div>
@@ -170,7 +170,7 @@ const Location = ({ dataNewArrival, location }) => {
       </div>
 
       {/* Mobile */}
-      <div className="columns-mobile mt-4">
+      <div className="container-location-body columns-mobile mt-4">
         <Slider {...settings}>
           <div className="card-location">
             <div className="card-location__header">
@@ -179,13 +179,13 @@ const Location = ({ dataNewArrival, location }) => {
             <div className="card-location__body">
               <h1 className="card-location__body--title">VENUE</h1>
               <p className="card-location__body--desc">
-                Sudirman Grand Ballroom
+                Masjid Jami' Al-Falaah
               </p>
               <p className="card-location__body--desc">
-                Jl. Jend. Sudirman No.620, Dungus Cariang, Andir, Kota
+                Jl. Aup Bar RT 03/ RW 10 Pasar Minggu
               </p>
               <p className="card-location__body--desc">
-                Bandung, Jawa Barat 40183
+                Pasar Minggu, Jakarta Selatan, DKI Jakarta 12540
               </p>
             </div>
           </div>
@@ -196,7 +196,7 @@ const Location = ({ dataNewArrival, location }) => {
             <div className="card-location__body">
               <h1 className="card-location__body--title">DATE</h1>
               <p className="card-location__body--desc">
-                Sunday, 8th August 2021
+                Sunday, 21 November 2021
               </p>
             </div>
           </div>
@@ -209,12 +209,12 @@ const Location = ({ dataNewArrival, location }) => {
               <ul>
                 <li>
                   <p className="card-location__body--desc">
-                    Ceremony: 10.30 WIB - 11.30 WIB
+                    Session I: 11.00 WIB - 13.30 WIB
                   </p>
                 </li>
                 <li>
                   <p className="card-location__body--desc">
-                    Reception: 12.30 WIB - 14.30 WIB
+                    Session II: 13.30 WIB - 14.30 WIB
                   </p>
                 </li>
               </ul>

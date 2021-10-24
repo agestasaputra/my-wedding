@@ -22,7 +22,7 @@ const Counter = ({ dataNewArrival, location }) => {
           <h1 className="columns-invitation-head__title">
             We're getting <b>Ready</b>
           </h1>
-          <Countdown date={Date.now() + 5000000000} renderer={renderer} />
+          <Countdown date={'2021-11-21T04:00:00.000Z'} renderer={renderer} />
           <h1 className="columns-invitation-head__quotes">
             Until We Become <br />
             Mr. & Mrs.

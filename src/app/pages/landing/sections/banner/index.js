@@ -6,11 +6,12 @@ const Banner = ({ img, location }) => {
 
   React.useEffect(() => {
     // assign guest
+    // format: http://localhost:3000/my-wedding?to=Agesta+dan+Partner
     const tmp = location.search
-      ? location.search.slice(2).replace(/[+]/g, " ")
+      ? location.search.split('=')[1].replace(/[+]/g, " ")
       : "";
     setGuest(tmp);
-  }, []);
+  }, [location]);
 
   return (
     <section className="hero container-banner">
@@ -28,7 +29,7 @@ const Banner = ({ img, location }) => {
           )}
           <div className="section-couple">
             <h1 className="title">SISKA & AGESTA</h1>
-            <h2 className="subtitle">Sunday, 8th August 2021</h2>
+            <h2 className="subtitle">Sunday, 21 November 2021</h2>
           </div>
         </div>
       </div>

@@ -2,8 +2,6 @@ import React from "react";
 import "./styles.scss";
 import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
 import Slider from "react-slick";
-import Countdown from "react-countdown";
-import CustomCountdown from "app/components/custom-countdown";
 
 const AboutUs = ({ dataNewArrival, location }) => {
   const settings = {
@@ -12,17 +10,6 @@ const AboutUs = ({ dataNewArrival, location }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
-
-  // Renderer callback with condition
-  const renderer = (data) => {
-    if (data.completed) {
-      // Render a completed state
-      return <h1>Completed!</h1>;
-    } else {
-      // Render a countdown
-      return <CustomCountdown data={data} />;
-    }
   };
 
   return (
