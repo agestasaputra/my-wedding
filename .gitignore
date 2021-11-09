@@ -9,6 +9,9 @@
 /coverage
 
 # production
+.eslintcache
+
+# production
 /build
 
 # misc
