@@ -10,15 +10,13 @@ import { PlayCircle, PauseCircle } from "react-feather";
 
 const Landing = ({ state, dispatch, location }) => {
 
+  // const [init, setInit] = React.useState(true);
   const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
 
-  React.useEffect(() => {
-    audio.play();
-  }, [audio])
-
   const onMusicClicked = () => {
+    console.log('onMusicClicked!');
     if (playing) {
       audio.pause();
     } else {
@@ -26,6 +24,13 @@ const Landing = ({ state, dispatch, location }) => {
     }
     setPlaying(!playing);
   }
+
+  React.useEffect(() => {
+      setTimeout(() => {
+        audio.play();
+        setPlaying(!playing);
+      }, 5000);
+  }, [audio, playing])
 
   return (
     <div className="container-landing">
