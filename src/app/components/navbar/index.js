@@ -4,7 +4,6 @@ import "./styles.scss";
 const Navbar = ({ state, dispatch }) => {
 
   const menuOnClicked = (type) => {
-    console.log('type:', type);
     let element = '';
 
     switch (type) {
