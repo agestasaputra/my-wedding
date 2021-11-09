@@ -12,12 +12,22 @@
     .navbar-item {
       font-size: 12px;
       color: var(--color-perfect-wood) !important;
+
+      &:hover {
+        cursor: default;
+        text-decoration: unset;
+      }
     }
   }
 
   .navbar-item {
     font-size: 12px;
     color: var(--color-perfect-wood) !important;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }
 

@@ -6,8 +6,23 @@ import AboutUs from "./sections/about-us";
 import Gallery from "./sections/gallery";
 import Location from "./sections/location";
 import "./styles.scss";
+import { PlayCircle, PauseCircle } from "react-feather";
 
 const Landing = ({ state, dispatch, location }) => {
+
+  const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
+  const [audio] = React.useState(new Audio(audioUrl));
+  const [playing, setPlaying] = React.useState(false);
+
+  const onMusicClicked = () => {
+    if (playing) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setPlaying(!playing);
+  }
+
   return (
     <div className="container-landing">
       <Banner
@@ -32,6 +47,17 @@ const Landing = ({ state, dispatch, location }) => {
         dataNewArrival={state.dataLandingPage.dataNewArrival}
       />
       <Location />
+
+      {/* Music */}
+      <div>
+        {
+          playing ? (
+            <PauseCircle className="pause-circle" size="80" onClick={onMusicClicked} />
+          ) : (
+            <PlayCircle className="play-circle" size="80" onClick={onMusicClicked} />
+          )
+        }
+      </div>
     </div>
   );
 };

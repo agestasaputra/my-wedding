@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss";
 import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
 import Slider from "react-slick";
+import Img1 from "app/assets/DSC06867.JPG";
 
 const Gallery = ({ dataNewArrival, location }) => {
   const settings = {
@@ -20,6 +21,35 @@ const Gallery = ({ dataNewArrival, location }) => {
             GALLERY
           </h1>
           <hr className="hr-custom" />
+        </div>
+      </div>
+      <div className="columns container-gallery-body columns-desktop">
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
+        </div>
+        <div>
+          <img src={Img1} alt="img-1" />
         </div>
       </div>
       <div className="columns container-gallery-body columns-mobile">

@@ -1,3 +1,30 @@
 .container-landing {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+  .play-circle,
+  .pause-circle {
+    stroke: var(--color-perfect-wood);
+    width: 80px;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.16);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: 9999;
+
+    @media (max-width: 480px) {
+      width: 60px;
+      height: 60px;
+      bottom: 65px;
+      right: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
