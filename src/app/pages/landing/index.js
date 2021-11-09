@@ -10,13 +10,11 @@ import { PlayCircle, PauseCircle } from "react-feather";
 
 const Landing = ({ state, dispatch, location }) => {
 
-  // const [init, setInit] = React.useState(true);
   const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
 
   const onMusicClicked = () => {
-    console.log('onMusicClicked!');
     if (playing) {
       audio.pause();
     } else {
