@@ -14,6 +14,10 @@ const Landing = ({ state, dispatch, location }) => {
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
 
+  React.useEffect(() => {
+    audio.play();
+  }, [audio])
+
   const onMusicClicked = () => {
     if (playing) {
       audio.pause();
@@ -52,9 +56,9 @@ const Landing = ({ state, dispatch, location }) => {
       <div>
         {
           playing ? (
-            <PauseCircle className="pause-circle" size="80" onClick={onMusicClicked} />
+            <PauseCircle className="pause-circle" onClick={onMusicClicked} />
           ) : (
-            <PlayCircle className="play-circle" size="80" onClick={onMusicClicked} />
+            <PlayCircle className="play-circle" onClick={onMusicClicked} />
           )
         }
       </div>
