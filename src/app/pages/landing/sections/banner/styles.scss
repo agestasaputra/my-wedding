@@ -13,18 +13,11 @@
   }
 
   @media (max-width: 480px) {
-    // height: 100vw;
-    width: 100vh;
     background-image: url(../../../../assets/banner/prewed-2.jpg/);
     background-attachment: fixed;
     background-size: cover;
-    background-position: -200px -100px;
+    background-position: 0px 0px;
     overflow: hidden;
-    transform: rotate(-90deg) !important;
-    -webkit-transform: rotate(-90deg) !important;
-    -moz-transform: rotate(-90deg) !important;
-    -ms-transform: rotate(-90deg) !important;
-    -o-transform: rotate(-90deg) !important;
   }
 
   .hero-body {
@@ -34,11 +27,6 @@
 
     @media (max-width: 480px) {
       padding: 10px;
-      transform: rotate(90deg) !important;
-      -webkit-transform: rotate(90deg) !important;
-      -moz-transform: rotate(90deg) !important;
-      -ms-transform: rotate(90deg) !important;
-      -o-transform: rotate(90deg) !important;
     }
 
     .container {
