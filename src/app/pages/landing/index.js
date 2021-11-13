@@ -22,7 +22,7 @@ const Landing = ({ state, dispatch, location }) => {
 
   React.useEffect(() => {
     // assign guest
-    // format: http://localhost:3000/my-wedding?to=Agesta+dan+Partner
+    // format: https://agestasaputra.github.io/my-wedding/?to=Rizal+&+Partner
     const tmp = location.search
       ? location.search.split('=')[1].replace(/[+]/g, " ")
       : "";
@@ -63,6 +63,7 @@ const Landing = ({ state, dispatch, location }) => {
     if (playing) {
       audio.pause();
     } else {
+      audio.autoplay = true;
       audio.play();
     }
     setPlaying(!playing);
@@ -119,17 +120,6 @@ const Landing = ({ state, dispatch, location }) => {
         {
           (!modalWelcome.show && !playing) && <PlayCircle className="play-circle" onClick={onMusicClicked} />
         }
-        {/* {
-          playing ? (
-            // <button className="btn-pause-circle" onClick={onMusicClicked} >
-              <PauseCircle className="pause-circle" onClick={onMusicClicked} />
-            // </button>
-          ) : (
-            // <button className="play-circle" onClick={onMusicClicked} >
-              <PlayCircle className="play-circle" onClick={onMusicClicked} />
-            // </button>
-          )
-        } */}
       </div>
     </div>
 

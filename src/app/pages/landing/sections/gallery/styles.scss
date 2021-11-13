@@ -40,6 +40,39 @@
       @media (max-width: 480px) {
         display: none;
       }
+
+      .card-person {
+        display: flex !important;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .card-person__frame {
+          // width: 200px;
+          // width: 80vw;
+          border: 20px solid var(--color-perfect-wood);
+
+          .card-person__img {
+            bottom: 22%;
+            left: 2vw;
+            top: -4vw;
+            display: block;
+            // width: 200px;
+            position: static;
+          }
+        }
+
+        .card-person__title {
+          text-align: center;
+          color: var(--color-cool-black);
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .card-person__desc {
+          text-align: center;
+          color: var(--color-cool-black);
+          font-size: 10px;
+        }
+      }
     }
 
     &.columns-mobile {

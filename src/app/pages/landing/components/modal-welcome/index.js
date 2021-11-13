@@ -24,7 +24,7 @@ export default function ModalWelcome({ show, title, fullscreen, guest, onModalCl
             <Modal.Body>
                 <div className="section-invitation">
                     <div className="section-dear">
-                        Dear <span className="guest">{guest}</span>
+                        Dear <span className="guest">{guest ? guest : 'You'}</span>
                     </div>
                     <div className="section-desc">
                         Request the honour of your presence <br />

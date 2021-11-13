@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
+import AgestaSaputra from "app/assets/about-us/agesta-saputra.jpg";
+
 import Slider from "react-slick";
 
 const AboutUs = ({ dataNewArrival, location }) => {
@@ -48,7 +50,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
         </div>
         <div className="card-person mt-6">
           <div className="card-person__frame mb-5">
-            <img src={PreweddingImg} className="card-person__img" alt="name" />
+            <img src={AgestaSaputra} className="card-person__img" alt="name" />
           </div>
           <h1 className="card-person__title">Agesta Budy Saputra</h1>
           <p className="card-person__desc">
@@ -74,7 +76,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={PreweddingImg}
+                src={AgestaSaputra}
                 className="card-person__img"
                 alt="name"
               />

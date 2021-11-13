@@ -81,7 +81,7 @@ const Navbar = ({ state, dispatch }) => {
           </h6>
         </div>
         <div className="menu">
-          <i className="fa fa-history" />
+          <i className="fa fa-map" />
           <h6 className="menu__title" onClick={() => menuOnClicked('LOCATION')}>
             Location
           </h6>

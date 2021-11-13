@@ -152,18 +152,9 @@ const Location = ({ dataNewArrival, location }) => {
             </div>
             <div className="card-location__body">
               <h1 className="card-location__body--title">TIME</h1>
-              <ul>
-                <li>
-                  <p className="card-location__body--desc">
-                    Ceremony: 10.30 WIB - 11.30 WIB
-                  </p>
-                </li>
-                <li>
-                  <p className="card-location__body--desc">
-                    Reception: 12.30 WIB - 14.30 WIB
-                  </p>
-                </li>
-              </ul>
+              <p className="card-location__body--desc">
+                  11.00 WIB - 16.00 WIB
+              </p>
             </div>
           </div>
         </div>
@@ -206,18 +197,9 @@ const Location = ({ dataNewArrival, location }) => {
             </div>
             <div className="card-location__body">
               <h1 className="card-location__body--title">TIME</h1>
-              <ul>
-                <li>
-                  <p className="card-location__body--desc">
-                    Session I: 11.00 WIB - 13.30 WIB
-                  </p>
-                </li>
-                <li>
-                  <p className="card-location__body--desc">
-                    Session II: 13.30 WIB - 14.30 WIB
-                  </p>
-                </li>
-              </ul>
+                <p className="card-location__body--desc">
+                  11.00 WIB - 16.00 WIB
+                </p>
             </div>
           </div>
         </Slider>
