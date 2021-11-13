@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-wedding/static/css/main.219f23da.chunk.css",
-    "main.js": "/my-wedding/static/js/main.09300e3b.chunk.js",
-    "main.js.map": "/my-wedding/static/js/main.09300e3b.chunk.js.map",
+    "main.css": "/my-wedding/static/css/main.c06a4a4f.chunk.css",
+    "main.js": "/my-wedding/static/js/main.5bac4587.chunk.js",
+    "main.js.map": "/my-wedding/static/js/main.5bac4587.chunk.js.map",
     "runtime-main.js": "/my-wedding/static/js/runtime-main.c5386f63.js",
     "runtime-main.js.map": "/my-wedding/static/js/runtime-main.c5386f63.js.map",
     "static/css/2.2b1d6057.chunk.css": "/my-wedding/static/css/2.2b1d6057.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.d70a76c6.chunk.js.map": "/my-wedding/static/js/2.d70a76c6.chunk.js.map",
     "index.html": "/my-wedding/index.html",
     "static/css/2.2b1d6057.chunk.css.map": "/my-wedding/static/css/2.2b1d6057.chunk.css.map",
-    "static/css/main.219f23da.chunk.css.map": "/my-wedding/static/css/main.219f23da.chunk.css.map",
+    "static/css/main.c06a4a4f.chunk.css.map": "/my-wedding/static/css/main.c06a4a4f.chunk.css.map",
     "static/js/2.d70a76c6.chunk.js.LICENSE.txt": "/my-wedding/static/js/2.d70a76c6.chunk.js.LICENSE.txt",
     "static/media/agesta-saputra.ede560f8.jpg": "/my-wedding/static/media/agesta-saputra.ede560f8.jpg",
     "static/media/denim.0cecac61.jpg": "/my-wedding/static/media/denim.0cecac61.jpg",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.c5386f63.js",
     "static/css/2.2b1d6057.chunk.css",
     "static/js/2.d70a76c6.chunk.js",
-    "static/css/main.219f23da.chunk.css",
-    "static/js/main.09300e3b.chunk.js"
+    "static/css/main.c06a4a4f.chunk.css",
+    "static/js/main.5bac4587.chunk.js"
   ]
 }
