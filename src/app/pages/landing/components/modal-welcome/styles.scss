@@ -1,0 +1,178 @@
+.modal {
+  // MOBILE
+  .modal-fullscreen {
+    .modal-content {
+      max-height: unset;
+      margin: 0px;
+    }
+
+    .modal-header {
+      justify-content: center;
+      text-align: center;
+
+      .modal-title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    .modal-body {
+      .section-invitation {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+
+        .section-dear {
+          display: block;
+          font-size: 12px;
+          margin: 0px 0px 5px 0px;
+
+          .guest {
+            // font-family: "Dancing Script", handwriting;
+            font-weight: bold;
+          }
+        }
+
+        .section-desc {
+          display: block;
+          font-size: 12px;
+          margin: 0px;
+        }
+
+        .section-bride {
+          display: block;
+          font-family: "Dancing Script", handwriting;
+          font-size: 18px;
+          font-weight: bold;
+          margin: 20px 0px;
+        }
+
+        .section-health-protocol {
+          width: 90%;
+          background-color: #dede;
+          padding: 15px 0px;
+          border-radius: 0.5em;
+          -webkit-border-radius: 0.5em;
+          -moz-border-radius: 0.5em;
+          -ms-border-radius: 0.5em;
+          -o-border-radius: 0.5em;
+
+          .section-health-protocol--title {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0px 0px 20px 0px;
+          }
+
+          .section-health-protocol--gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
+
+            .health-protocol--item {
+              display: flex;
+              flex-flow: column nowrap;
+              align-items: center;
+
+              img {
+                width: 50%;
+              }
+
+              .desc {
+                font-size: 12px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      padding: 5px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  // DESKTOP
+  .modal-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .modal-body {
+    .section-invitation {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+
+      .section-dear {
+        display: block;
+        font-size: 14px;
+        margin: 0px 0px 5px 0px;
+
+        .guest {
+          // font-family: "Dancing Script", handwriting;
+          font-weight: bold;
+        }
+      }
+
+      .section-desc {
+        display: block;
+        font-size: 14px;
+        margin: 0px;
+      }
+
+      .section-bride {
+        display: block;
+        font-family: "Dancing Script", handwriting;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0px;
+      }
+
+      .section-health-protocol {
+        width: 70%;
+        background-color: #dede;
+        padding: 15px 0px;
+        border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        -ms-border-radius: 0.5em;
+        -o-border-radius: 0.5em;
+
+        .section-health-protocol--title {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0px 0px 10px 0px;
+        }
+
+        .section-health-protocol--gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          row-gap: 10px;
+
+          .health-protocol--item {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            img {
+              width: 70%;
+            }
+
+            .desc {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   box-shadow: 0px 0px 10px -5px var(--color-shadow);
 
   @media (max-width: 480px) {
-    display: none;
+    display: none !important;
   }
 
   .navbar-brand {
@@ -37,20 +37,20 @@
   @media (max-width: 480px) {
     display: flex !important;
     padding: 10px 0px !important;
-    box-shadow: 0 0 5px 0 #303337;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+    box-shadow: 0 0 5px 0 #303337 !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    text-align: center !important;
 
     .menu {
       .fa {
-        color: var(--color-perfect-wood);
-        font-size: 22px;
+        color: var(--color-perfect-wood) !important;
+        font-size: 22px !important;
       }
       .menu__title {
-        color: var(--color-perfect-wood);
-        font-size: 9px;
-        font-weight: 300;
+        color: var(--color-perfect-wood) !important;
+        font-size: 9px !important;
+        font-weight: 300 !important;
       }
     }
   }

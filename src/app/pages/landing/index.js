@@ -7,12 +7,57 @@ import Gallery from "./sections/gallery";
 import Location from "./sections/location";
 import "./styles.scss";
 import { PlayCircle, PauseCircle } from "react-feather";
+import ModalWelcome from "./components/modal-welcome";
 
 const Landing = ({ state, dispatch, location }) => {
-
   const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
+  const [modalWelcome, setModalWelcome] = React.useState({
+    isShow: false,
+    title: `Welcome to Siska & Agesta's Wedding!`,
+    fullscreen: false
+  })
+  const [guest, setGuest] = React.useState("");
+
+  React.useEffect(() => {
+    // assign guest
+    // format: http://localhost:3000/my-wedding?to=Agesta+dan+Partner
+    const tmp = location.search
+      ? location.search.split('=')[1].replace(/[+]/g, " ")
+      : "";
+    setGuest(tmp);
+  }, [location]);
+
+  React.useEffect(() => {
+    onDeviceChecking();
+    setTimeout(() => {
+      setModalWelcome((prevState) => ({
+          ...prevState,
+          show: true
+        })
+      );
+    }, 1000);
+  }, [])
+
+  const onDeviceChecking = () => {
+    const mq = window.matchMedia( "(min-width: 480px)" );
+      if (mq.matches) {
+        // desktop
+        setModalWelcome((prevState) => ({
+            ...prevState,
+            fullscreen: false
+          })
+        );
+      } else {
+        // mobile
+        setModalWelcome((prevState) => ({
+            ...prevState,
+            fullscreen: true
+          })
+        );
+      }
+  }
 
   const onMusicClicked = () => {
     if (playing) {
@@ -23,12 +68,14 @@ const Landing = ({ state, dispatch, location }) => {
     setPlaying(!playing);
   }
 
-  React.useEffect(() => {
-      setTimeout(() => {
-        audio.play();
-        setPlaying(!playing);
-      }, 5000);
-  }, [audio, playing])
+  const onModalClosed = () => {
+    setModalWelcome((prevState) => ({
+      ...prevState,
+      show: !prevState.show
+    })
+  );
+    onMusicClicked();
+  }
 
   return (
     <div className="container-landing">
@@ -55,17 +102,37 @@ const Landing = ({ state, dispatch, location }) => {
       />
       <Location />
 
+
+      <ModalWelcome
+        show={modalWelcome.show}
+        title={modalWelcome.title}
+        fullscreen={modalWelcome.fullscreen}
+        guest={guest}
+        onModalClosed={onModalClosed}
+      />
+
       {/* Music */}
       <div>
         {
-          playing ? (
-            <PauseCircle className="pause-circle" onClick={onMusicClicked} />
-          ) : (
-            <PlayCircle className="play-circle" onClick={onMusicClicked} />
-          )
+          (!modalWelcome.show && playing) && <PauseCircle className="pause-circle" onClick={onMusicClicked} />
         }
+        {
+          (!modalWelcome.show && !playing) && <PlayCircle className="play-circle" onClick={onMusicClicked} />
+        }
+        {/* {
+          playing ? (
+            // <button className="btn-pause-circle" onClick={onMusicClicked} >
+              <PauseCircle className="pause-circle" onClick={onMusicClicked} />
+            // </button>
+          ) : (
+            // <button className="play-circle" onClick={onMusicClicked} >
+              <PlayCircle className="play-circle" onClick={onMusicClicked} />
+            // </button>
+          )
+        } */}
       </div>
     </div>
+
   );
 };
 

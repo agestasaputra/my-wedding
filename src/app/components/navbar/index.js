@@ -8,7 +8,7 @@ const Navbar = ({ state, dispatch }) => {
 
     switch (type) {
       case 'INVITATION':
-          element = 'container-banner';
+          element = 'container-invitation';
           break;
       case 'ABOUT_US':
           element = 'container-about-us';
