@@ -1,4 +1,5 @@
 .container-banner {
+  width: 100vw;
   height: 100vh;
   // background-image: url(../../../../assets/banner/prewedding-1.jpeg/);
   background-image: url(../../../../assets/banner/prewed-4.jpg/);
@@ -12,11 +13,18 @@
   }
 
   @media (max-width: 480px) {
+    // height: 100vw;
+    width: 100vh;
     background-image: url(../../../../assets/banner/prewed-2.jpg/);
     background-attachment: fixed;
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: -200px -100px;
     overflow: hidden;
+    transform: rotate(-90deg) !important;
+    -webkit-transform: rotate(-90deg) !important;
+    -moz-transform: rotate(-90deg) !important;
+    -ms-transform: rotate(-90deg) !important;
+    -o-transform: rotate(-90deg) !important;
   }
 
   .hero-body {
@@ -26,6 +34,11 @@
 
     @media (max-width: 480px) {
       padding: 10px;
+      transform: rotate(90deg) !important;
+      -webkit-transform: rotate(90deg) !important;
+      -moz-transform: rotate(90deg) !important;
+      -ms-transform: rotate(90deg) !important;
+      -o-transform: rotate(90deg) !important;
     }
 
     .container {

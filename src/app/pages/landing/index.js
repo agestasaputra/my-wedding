@@ -63,8 +63,14 @@ const Landing = ({ state, dispatch, location }) => {
     if (playing) {
       audio.pause();
     } else {
-      audio.autoplay = true;
-      audio.play();
+      console.log('onMusicClicked - 2!');
+      // audio.autoplay = true;
+      // audio.volume = 0;
+      setTimeout(() => {
+        audio.load();
+        audio.currentTime = 0;
+        audio.play();
+      }, 1000);
     }
     setPlaying(!playing);
   }

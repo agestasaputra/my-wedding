@@ -43,6 +43,10 @@
     text-align: center !important;
 
     .menu {
+      &:hover {
+        cursor: pointer;
+      }
+
       .fa {
         color: var(--color-perfect-wood) !important;
         font-size: 22px !important;

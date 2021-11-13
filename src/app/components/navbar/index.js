@@ -62,27 +62,27 @@ const Navbar = ({ state, dispatch }) => {
 
       {/* Navbar Mobile */}
       <nav className="navbar navbar-mobile is-fixed-bottom is-black">
-        <div className="menu">
+        <div className="menu" onClick={() => menuOnClicked('INVITATION')}>
           <i className="fa fa-home" />
-          <h6 className="menu__title" onClick={() => menuOnClicked('INVITATION')}>
+          <h6 className="menu__title">
             Invitation
           </h6>
         </div>
-        <div className="menu">
+        <div className="menu" onClick={() => menuOnClicked('ABOUT_US')}>
           <i className="fa fa-info-circle" />
-          <h6 className="menu__title" onClick={() => menuOnClicked('ABOUT_US')}>
+          <h6 className="menu__title">
             About Us
           </h6>
         </div>
-        <div className="menu">
+        <div className="menu" onClick={() => menuOnClicked('GALLERY')}>
           <i className="fa fa-photo" />
-          <h6 className="menu__title" onClick={() => menuOnClicked('GALLERY')}>
+          <h6 className="menu__title">
             Gallery
           </h6>
         </div>
-        <div className="menu">
+        <div className="menu" onClick={() => menuOnClicked('LOCATION')}>
           <i className="fa fa-map" />
-          <h6 className="menu__title" onClick={() => menuOnClicked('LOCATION')}>
+          <h6 className="menu__title">
             Location
           </h6>
         </div>

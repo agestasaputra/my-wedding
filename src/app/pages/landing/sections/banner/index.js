@@ -14,7 +14,27 @@ const Banner = ({ img, location }) => {
   // }, [location]);
 
   return (
-    <section className="hero container-banner">
+    // <section className="hero container-banner desktop">
+    //   <div className="hero-body">
+    //     <div className="container">
+    //       {/* {guest && (
+    //         <div className="section-invitation">
+    //           <h1 className="title">
+    //             Dear <span className="guest">{guest}</span>,
+    //           </h1>
+    //           <h2 className="subtitle">
+    //             We would like you to invite you to our special moment.
+    //           </h2>
+    //         </div>
+    //       )} */}
+    //       <div className="section-couple">
+    //         <h1 className="title">SISKA & AGESTA</h1>
+    //         <h2 className="subtitle">Sunday, 21 November 2021</h2>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
+    <section className="hero container-banner mobile">
       <div className="hero-body">
         <div className="container">
           {/* {guest && (
