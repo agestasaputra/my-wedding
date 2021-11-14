@@ -8,9 +8,12 @@ import Location from "./sections/location";
 import "./styles.scss";
 import { PlayCircle, PauseCircle } from "react-feather";
 import ModalWelcome from "./components/modal-welcome";
+import Song from "app/assets/banner/RedVelvet-Future.mp3"
 
 const Landing = ({ state, dispatch, location }) => {
-  const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
+  // const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
+  const [audioUrl] = React.useState(Song);
+  // const [audioUrl] = React.useState('');
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
   const [modalWelcome, setModalWelcome] = React.useState({
@@ -63,14 +66,7 @@ const Landing = ({ state, dispatch, location }) => {
     if (playing) {
       audio.pause();
     } else {
-      console.log('onMusicClicked - 2!');
-      // audio.autoplay = true;
-      // audio.volume = 0;
-      setTimeout(() => {
-        audio.load();
-        audio.currentTime = 0;
-        audio.play();
-      }, 1000);
+      audio.play();
     }
     setPlaying(!playing);
   }
