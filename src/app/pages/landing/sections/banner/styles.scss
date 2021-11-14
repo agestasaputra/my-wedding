@@ -1,22 +1,17 @@
 .container-banner {
   width: 100vw;
   height: 100vh;
-  // background-image: url(../../../../assets/banner/prewedding-1.jpeg/);
   background-image: url(../../../../assets/banner/prewed-4.jpg/);
   background-attachment: fixed;
   background-size: cover;
-  background-position: 0px -200px;
+  background-position: 0px -10vw;
   overflow: hidden;
-
-  @media (max-width: 1480px) {
-    background-position: 0 -480px;
-  }
 
   @media (max-width: 480px) {
     background-image: url(../../../../assets/banner/prewed-2.jpg/);
     background-attachment: unset !important;
     background-size: cover !important;
-    background-position: 0px 0px;
+    background-position: 0vw 0vw;
   }
 
   .hero-body {

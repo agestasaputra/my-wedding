@@ -59,8 +59,27 @@
 
         .card-person__frame {
           border: 20px solid var(--color-perfect-wood);
-          width: 250px;
+          // width: 250px;
+          // height: 350px;
+          width: 22vw;
+          height: 32vw;
+
           box-shadow: 8px 9px 2px 1px var(--color-shadow);
+
+          &.women,
+          &.men {
+            background-size: cover !important;
+          }
+
+          &.women {
+            background-image: url(../../../../assets/about-us/siskadptr-2.jpg/);
+            background-position: -2.5vw 0vw;
+          }
+
+          &.men {
+            background-image: url(../../../../assets/about-us/agesta-saputra-2.jpg/);
+            background-position: -4vw 0vw;
+          }
 
           .card-person__img {
             bottom: 22%;
@@ -128,18 +147,18 @@
 
           &.women,
           &.men {
-            background-attachment: unset !important;
+            // background-attachment: unset !important;
             background-size: cover !important;
-            background-position: 0px 0px;
+            background-position: -30px 0px;
           }
 
           &.women {
-            background-image: url(../../../../assets/about-us/siskadptr.jpg/);
+            background-image: url(../../../../assets/about-us/siskadptr-2.jpg/);
           }
 
           &.men {
-            background-image: url(../../../../assets/about-us/agesta-saputra.jpg/);
-            background-position: 0px -35px;
+            background-image: url(../../../../assets/about-us/agesta-saputra-2.jpg/);
+            background-position: -45px 0px;
           }
 
           .card-person__img {
