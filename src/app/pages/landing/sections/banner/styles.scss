@@ -14,10 +14,9 @@
 
   @media (max-width: 480px) {
     background-image: url(../../../../assets/banner/prewed-2.jpg/);
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: unset !important;
+    background-size: cover !important;
     background-position: 0px 0px;
-    overflow: hidden;
   }
 
   .hero-body {

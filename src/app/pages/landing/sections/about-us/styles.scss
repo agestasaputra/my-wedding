@@ -123,7 +123,24 @@
 
         .card-person__frame {
           width: 200px;
+          height: 300px;
           border: 12px solid var(--color-perfect-wood);
+
+          &.women,
+          &.men {
+            background-attachment: unset !important;
+            background-size: cover !important;
+            background-position: 0px 0px;
+          }
+
+          &.women {
+            background-image: url(../../../../assets/about-us/siskadptr.jpg/);
+          }
+
+          &.men {
+            background-image: url(../../../../assets/about-us/agesta-saputra.jpg/);
+            background-position: 0px -35px;
+          }
 
           .card-person__img {
             bottom: 22%;
