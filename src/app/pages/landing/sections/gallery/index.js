@@ -3,7 +3,6 @@ import "./styles.scss";
 // import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
 import Slider from "react-slick";
 // import Prewed1 from "app/assets/gallery/prewed-1.jpg";
-import Gallery1 from "app/assets/gallery/gallery-1.jpg";
 import Gallery2 from "app/assets/gallery/gallery-2.jpg";
 import Gallery3 from "app/assets/gallery/gallery-3.jpg";
 import Gallery4 from "app/assets/gallery/gallery-4.jpg";
@@ -11,10 +10,6 @@ import Gallery5 from "app/assets/gallery/gallery-5.jpg";
 import Gallery6 from "app/assets/gallery/gallery-6.jpg";
 import Gallery7 from "app/assets/gallery/gallery-7.jpg";
 import Gallery8 from "app/assets/gallery/gallery-8.jpg";
-// import Gallery9 from "app/assets/gallery/gallery-9.jpg";
-// import Gallery10 from "app/assets/gallery/gallery-10.jpg";
-// import Gallery11 from "app/assets/gallery/gallery-11.jpg";
-// import Gallery12 from "app/assets/gallery/gallery-12.jpg";
 import Gallery13 from "app/assets/gallery/gallery-13.jpg";
 import Gallery14 from "app/assets/gallery/gallery-14.jpg";
 

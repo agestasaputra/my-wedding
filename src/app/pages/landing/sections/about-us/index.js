@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
+import Siskadptr from "app/assets/about-us/siskadptr.jpg";
 import AgestaSaputra from "app/assets/about-us/agesta-saputra.jpg";
 
 import Slider from "react-slick";
@@ -43,7 +43,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
       <div className="columns container-about-us-body columns-desktop m-0 is-justify-content-space-around mt-4">
         <div className="card-person mt-6">
           <div className="card-person__frame mb-5">
-            <img src={PreweddingImg} className="card-person__img" alt="name" />
+            <img src={Siskadptr} className="card-person__img" alt="name" />
           </div>
           <h1 className="card-person__title">Siska Dwi Putri Yuliansyah</h1>
           <p className="card-person__desc">
@@ -65,7 +65,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={PreweddingImg}
+                src={Siskadptr}
                 className="card-person__img"
                 alt="name"
               />

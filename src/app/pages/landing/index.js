@@ -8,7 +8,7 @@ import Location from "./sections/location";
 import "./styles.scss";
 import { PlayCircle, PauseCircle } from "react-feather";
 import ModalWelcome from "./components/modal-welcome";
-import Song from "app/assets/banner/Sezairi-ItsYou.mp3"
+import Song from "app/assets/landing/Sezairi-ItsYou.wav";
 
 const Landing = ({ state, dispatch, location }) => {
   // const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
