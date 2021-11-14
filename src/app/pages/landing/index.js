@@ -8,12 +8,11 @@ import Location from "./sections/location";
 import "./styles.scss";
 import { PlayCircle, PauseCircle } from "react-feather";
 import ModalWelcome from "./components/modal-welcome";
-import Song from "app/assets/banner/RedVelvet-Future.mp3"
+import Song from "app/assets/banner/Sezairi-ItsYou.mp3"
 
 const Landing = ({ state, dispatch, location }) => {
   // const [audioUrl] = React.useState('https://docs.google.com/uc?export=download&id=1otrDDMkyj1N8PjHgdkBC7dmHQHPzVnSR');
   const [audioUrl] = React.useState(Song);
-  // const [audioUrl] = React.useState('');
   const [audio] = React.useState(new Audio(audioUrl));
   const [playing, setPlaying] = React.useState(false);
   const [modalWelcome, setModalWelcome] = React.useState({
@@ -115,7 +114,7 @@ const Landing = ({ state, dispatch, location }) => {
       />
 
       {/* Music */}
-      <div>
+      <div className="wrapper-icon-song">
         {
           (!modalWelcome.show && playing) && <PauseCircle className="pause-circle" onClick={onMusicClicked} />
         }

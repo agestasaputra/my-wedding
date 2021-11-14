@@ -3,7 +3,13 @@ import "./styles.scss";
 
 const Navbar = ({ state, dispatch }) => {
 
+  const toggleBurgerMenu = () => {
+    console.log('toggleBurgerMenu!');
+    document.querySelector('.navbar-menu--tablet').classList.toggle('is-active');
+  }
+
   const menuOnClicked = (type) => {
+    toggleBurgerMenu();
     let element = '';
 
     switch (type) {
@@ -31,19 +37,40 @@ const Navbar = ({ state, dispatch }) => {
     <React.Fragment>
       {/* Navbar Desktop */}
       <nav className="navbar navbar-desktop is-transparent is-fixed-top is-black">
-        <div className="navbar-brand">
-          <span className="navbar-item">
-            Siska & Agesta's Wedding
-          </span>
-          <div className="navbar-burger" data-target="navbarMenu">
+
+        <div className="section-top">
+          <div className="navbar-brand">
+            <span className="navbar-item">
+              Siska & Agesta's Wedding
+            </span>
+          </div>
+
+          <div className="navbar-burger" data-target="navbarMenu" onClick={toggleBurgerMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
+
+          <div className="navbar-menu">
+            <div className="navbar-end">
+              <span className="navbar-item" onClick={() => menuOnClicked('INVITATION')}>
+                Invitation
+              </span>
+              <span className="navbar-item" onClick={() => menuOnClicked('ABOUT_US')}>
+                About Us
+              </span>
+              <span className="navbar-item" onClick={() => menuOnClicked('GALLERY')}>
+                Gallery
+              </span>
+              <span className="navbar-item" onClick={() => menuOnClicked('LOCATION')}>
+                Location
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div id="navbarMenu" className="navbar-menu">
-          <div className="navbar-end">
+        <div className="section-bottom">
+          <div className="navbar-menu navbar-menu--tablet">
             <span className="navbar-item" onClick={() => menuOnClicked('INVITATION')}>
               Invitation
             </span>
@@ -58,6 +85,7 @@ const Navbar = ({ state, dispatch }) => {
             </span>
           </div>
         </div>
+
       </nav>
 
       {/* Navbar Mobile */}
