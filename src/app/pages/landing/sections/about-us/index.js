@@ -49,7 +49,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
           </div>
           <h1 className="card-person__title">Siska Dwi Putri Yuliansyah</h1>
           <p className="card-person__desc">
-            Daughter of Mr. Fimansyah & Mrs. Ratih Yuliastinah
+            Daughter of Mr. Firmansyah & Mrs. Ratih Yuliastinah
           </p>
         </div>
         <div className="card-person mt-6">
@@ -76,7 +76,7 @@ const AboutUs = ({ dataNewArrival, location }) => {
             </div>
             <h1 className="card-person__title">Siska Dwi Putri Yuliansyah</h1>
             <p className="card-person__desc">
-              Daughter of Mr. Fimansyah & Mrs. Ratih Yuliastinah
+              Daughter of Mr. Firmansyah & Mrs. Ratih Yuliastinah
             </p>
           </div>
           <div className="card-person mt-5">
