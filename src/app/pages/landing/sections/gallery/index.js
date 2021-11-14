@@ -126,7 +126,7 @@ const Gallery = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={Gallery3}
+                src={Gallery13}
                 className="card-person__img"
                 alt="name"
               />
