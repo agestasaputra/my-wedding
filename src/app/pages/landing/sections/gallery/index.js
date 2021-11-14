@@ -1,17 +1,18 @@
 import React from "react";
 import "./styles.scss";
-// import PreweddingImg from "app/assets/banner/prewedding-1.jpeg";
 import Slider from "react-slick";
-// import Prewed1 from "app/assets/gallery/prewed-1.jpg";
 import Gallery2 from "app/assets/gallery/gallery-2.jpg";
-import Gallery3 from "app/assets/gallery/gallery-3.jpg";
 import Gallery4 from "app/assets/gallery/gallery-4.jpg";
-import Gallery5 from "app/assets/gallery/gallery-5.jpg";
 import Gallery6 from "app/assets/gallery/gallery-6.jpg";
 import Gallery7 from "app/assets/gallery/gallery-7.jpg";
 import Gallery8 from "app/assets/gallery/gallery-8.jpg";
-import Gallery13 from "app/assets/gallery/gallery-13.jpg";
+import Gallery9 from "app/assets/gallery/gallery-9.jpg";
+import Gallery10 from "app/assets/gallery/gallery-10.jpg";
+import Gallery12 from "app/assets/gallery/gallery-12.jpg";
 import Gallery14 from "app/assets/gallery/gallery-14.jpg";
+import Gallery15 from "app/assets/gallery/gallery-15.jpg";
+import Gallery16 from "app/assets/gallery/gallery-16.jpg";
+import Gallery17 from "app/assets/gallery/gallery-17.jpg";
 
 const Gallery = ({ dataNewArrival, location }) => {
   const settings = {
@@ -27,7 +28,6 @@ const Gallery = ({ dataNewArrival, location }) => {
   return (
     <section className="container-gallery">
 
-      {/* DESKTOP */}
       <div className="columns container-gallery-head m-0">
         <div className="column">
           <h1 className="container-gallery__title">
@@ -36,29 +36,14 @@ const Gallery = ({ dataNewArrival, location }) => {
           <hr className="hr-custom" />
         </div>
       </div>
+
+      {/* DESKTOP */}
       <div className="columns container-gallery-body columns-desktop">
+
         <div className="card-person mt-5">
           <div className="card-person__frame mb-4">
             <img
-              src={Gallery13}
-              className="card-person__img"
-              alt="name"
-            />
-          </div>
-        </div>
-        <div className="card-person mt-5">
-          <div className="card-person__frame mb-4">
-            <img
-              src={Gallery3}
-              className="card-person__img"
-              alt="name"
-            />
-          </div>
-        </div>
-        <div className="card-person mt-5">
-          <div className="card-person__frame mb-4">
-            <img
-              src={Gallery2}
+              src={Gallery14}
               className="card-person__img"
               alt="name"
             />
@@ -76,21 +61,13 @@ const Gallery = ({ dataNewArrival, location }) => {
         <div className="card-person mt-5">
           <div className="card-person__frame mb-4">
             <img
-              src={Gallery6}
+              src={Gallery2}
               className="card-person__img"
               alt="name"
             />
           </div>
         </div>
-        <div className="card-person mt-5">
-          <div className="card-person__frame mb-4">
-            <img
-              src={Gallery5}
-              className="card-person__img"
-              alt="name"
-            />
-          </div>
-        </div>
+
         <div className="card-person mt-5">
           <div className="card-person__frame mb-4">
             <img
@@ -103,7 +80,7 @@ const Gallery = ({ dataNewArrival, location }) => {
         <div className="card-person mt-5">
           <div className="card-person__frame mb-4">
             <img
-              src={Gallery14}
+              src={Gallery6}
               className="card-person__img"
               alt="name"
             />
@@ -118,7 +95,64 @@ const Gallery = ({ dataNewArrival, location }) => {
             />
           </div>
         </div>
+
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery9}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery12}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery10}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
+
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery16}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery15}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
+        <div className="card-person mt-5">
+          <div className="card-person__frame mb-4">
+            <img
+              src={Gallery17}
+              className="card-person__img"
+              alt="name"
+            />
+          </div>
+        </div>
       </div>
+
 
       {/* MOBILE */}
       <div className="columns container-gallery-body columns-mobile">
@@ -126,25 +160,7 @@ const Gallery = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={Gallery13}
-                className="card-person__img"
-                alt="name"
-              />
-            </div>
-          </div>
-          <div className="card-person mt-5">
-            <div className="card-person__frame mb-4">
-              <img
-                src={Gallery3}
-                className="card-person__img"
-                alt="name"
-              />
-            </div>
-          </div>
-          <div className="card-person mt-5">
-            <div className="card-person__frame mb-4">
-              <img
-                src={Gallery2}
+                src={Gallery14}
                 className="card-person__img"
                 alt="name"
               />
@@ -162,21 +178,13 @@ const Gallery = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={Gallery6}
+                src={Gallery2}
                 className="card-person__img"
                 alt="name"
               />
             </div>
           </div>
-          <div className="card-person mt-5">
-            <div className="card-person__frame mb-4">
-              <img
-                src={Gallery5}
-                className="card-person__img"
-                alt="name"
-              />
-            </div>
-          </div>
+
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
@@ -189,7 +197,7 @@ const Gallery = ({ dataNewArrival, location }) => {
           <div className="card-person mt-5">
             <div className="card-person__frame mb-4">
               <img
-                src={Gallery14}
+                src={Gallery6}
                 className="card-person__img"
                 alt="name"
               />
@@ -199,6 +207,62 @@ const Gallery = ({ dataNewArrival, location }) => {
             <div className="card-person__frame mb-4">
               <img
                 src={Gallery8}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery9}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery12}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery10}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery16}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery15}
+                className="card-person__img"
+                alt="name"
+              />
+            </div>
+          </div>
+          <div className="card-person mt-5">
+            <div className="card-person__frame mb-4">
+              <img
+                src={Gallery17}
                 className="card-person__img"
                 alt="name"
               />
