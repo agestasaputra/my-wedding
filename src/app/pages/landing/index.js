@@ -66,6 +66,7 @@ const Landing = ({ state, dispatch, location }) => {
       audio.pause();
     } else {
       audio.play();
+      onAudioEndDetect()
     }
     setPlaying(!playing);
   }
@@ -74,9 +75,15 @@ const Landing = ({ state, dispatch, location }) => {
     setModalWelcome((prevState) => ({
       ...prevState,
       show: !prevState.show
-    })
-  );
+    }));
     onMusicClicked();
+  }
+
+  const onAudioEndDetect = () => {
+    audio.onended = () => {
+      audio.pause();
+      setPlaying(false);
+    };
   }
 
   return (

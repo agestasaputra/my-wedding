@@ -210,6 +210,7 @@ const Location = ({ dataNewArrival, location }) => {
       {/* <div className="container-map" id="map" /> */}
       <div className="wrapper-map" align="center">
       <iframe
+        title="iframe-map"
         className="iframe-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.780422446261!2d106.83168891476949!3d-6.292563395445695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f20ec1986b2d%3A0x69669e1765becf43!2sMasjid%20Jami&#39;%20Al-Falaah!5e0!3m2!1sid!2sid!4v1636855490879!5m2!1sid!2sid"
         width="600"
